@@ -6,7 +6,12 @@
 
 #### [Video Demo](https://youtu.be/Y2jzpcygD6Y)
 
-### [Description]
+<a href="https://www.youtube.com/embed/Y2jzpcygD6Y" target="_blank"><img src="http://img.youtube.com/vi/ID_ВИДЕОРОЛИКА_НА_YOUTUBE/0.jpg" 
+alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" width="240" height="180" border="10" /></a>
+
+<iframe width="1348" height="767" src="https://www.youtube.com/embed/Y2jzpcygD6Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Description
   >Nutritions is a web app I created that shaws all nutritions (46 items in total) from food products someone's ate.
 
   >Without registration, the user can see the composition of a separate product.
@@ -22,7 +27,7 @@
 
 > New releases occur about once per year. The database may be searched online, queried through a representational state transfer API, or downloaded.
 
-#### [Technology Used]
+#### Technology Used
 * python
 * flask
 * sqlite
@@ -31,7 +36,7 @@
 * bootstrap
 * databases
 
-#### [Features]
+#### Features
 * Register:
   * register new user to be able to use food claculator full features.
 * Login:
@@ -51,7 +56,7 @@
   * the table of added products and their quantity,
   * table of all nutrients in added products.
 
- #### [Files]
+ #### Files
  * application.py - main file with code that controls page behavior
  * nutrotions.db - database with three tables:
    * 1.table of nitriets in food
