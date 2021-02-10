@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <p>The keyword you chose: <span class="text-success"> {{ product }} </span></p>
+
+
+    <p>Select a product from the dropdown list below:</p>
+
+    <!--the form offers a selection of products that start with a keyword-->
+    <form action="/diary_nutritions" method="post">
+
+        <select autofocus name="check">
+
+            <option disabled selected>Select food product</option>
+
+            {% for fo in food_arr %}
+                <option >{{ fo }}</option>
+            {%endfor%}
+
+        </select>
+
+        <br><br>
+
+        <p>Enter the quantity of food in grams:</p>
+
+        <p><input name="quantity" type="number" min="1" max="1000"></p>
+
+        <button type="submit" class="btn btn-success">Add food to food diary</button>
+
+    </form>
+
+{% endblock %}
+
+

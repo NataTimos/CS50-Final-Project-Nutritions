@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+<!--adding food to the diary only for registered users-->
+
+{% block main %}
+
+    <form action="/search_diary" method="post">
+
+        <label>Enter a keyword for the food product you want to <span class="text-success">add</span></span> to your food diary:</label></br>
+
+        <p class="text-secondary">(for example milk, no matter what kind of milk)</p>
+
+        <input autocomplete="off" autofocus name="query" placeholder="Milk" type="text">
+
+        <input type="submit" value="Search for all variations of this food" class="btn btn-success">
+
+    </form>
+
+{% endblock %}
+
+

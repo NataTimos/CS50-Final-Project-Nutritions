@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block main %}
+
+    <form action="/search" method="post">
+
+        <label>Enter a keyword for the food product you want to know:</label></br>
+
+        <p class="text-secondary">(for example milk, no matter what kind of milk)</p>
+
+        <input autocomplete="off" autofocus name="query" placeholder="Milk" type="text">
+
+        <input type="submit" value="Search for all variations of this food" class="btn btn-success">
+
+    </form>
+
+{% endblock %}
+

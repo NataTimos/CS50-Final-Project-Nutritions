@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post">
+        <div class="form-group">
+            <label>Please enter your name using only latin letters</label> </br>
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text" pattern="^[a-zA-Z]+$">
+
+        </div>
+        <div class="form-group">
+            <label class="form-group">Please enter your password using only latin letters and numbers</label> </br>
+            <input class="form-control" name="password" placeholder="Password" type="password" pattern="^[A-Za-z0-9]+$">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Confirm Password" type="password">
+        </div>
+        <button class="btn btn-success" type="submit">Register</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Refined search
+{% endblock %}
+
+{% block main %}
+    <p>The keyword you chose: <span class="text-success "> {{ product }} </span></p>
+
+    <p>Select a product from the dropdown list below:</p>
+
+    <!--the form offers a selection of products that start with a keyword-->
+    <form action="\nutritions" method="post">
+
+        <select autofocus name="check" class="form-select">
+
+        <option disabled selected>Select food product</option>
+
+        {% for fo in food_arr %}
+            <option >{{ fo }}</option>
+        {%endfor%}
+
+        </select>
+
+        <button type="submit" class="btn btn-success">Go!</button>
+
+    </form>
+
+{% endblock %}
+

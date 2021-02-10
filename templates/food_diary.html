@@ -1,0 +1,161 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Food Diary
+{% endblock %}
+
+{% block main %}
+
+
+        <table class="table table-striped caption-top">
+            <caption class="text-secondary bg-light">The products you ate</caption>
+            <tr>
+                <th>Product</th>
+                <th>Quantity, g</th>
+
+            </tr>
+            {% for row in food %}
+
+            <tr>
+                <td>{{ row["product"] }}</td>
+                <td>{{ row.totalFood }}</td>
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+<br>
+
+    <div class="table-responsive">
+    <table class="table table-bordered table-success table-striped caption-top " style="width: 100%">
+        <caption class="text-secondary bg-light">The main components in the food you ate</caption>
+            <tr>
+                <th>Water g</th>
+                <th>Energy g</th>
+                <th>Protein g</th>
+                <th>Lipid total g</th>
+                <th>Carbohydrates g</th>
+                <th>Fiber g</th>
+                <th>Sugar total g</th>
+            </tr>
+
+            <tr>
+                {% for key, val in newdb.items() %}
+                <td>{{ val }}</td>
+                {% endfor %}
+            </tr>
+
+
+    </table>
+    </div>
+<br>
+
+    <div class="table-responsive">
+    <table class="table table-striped table-primary caption-top" style="width: 100%">
+        <caption class="text-secondary bg-light">Minerals in the food you ate</caption>
+            <tr>
+                <th>Ash g</th>
+                <th>Calcium mg</th>
+                <th>Iron mg</th>
+                <th>Magnesium mg</th>
+                <th>Phosphorus mg</th>
+                <th>Potassium mg</th>
+                <th>Sodium mg</th>
+                <th>Zinc mg</th>
+                <th>Copper mg</th>
+                <th>Manganese mg</th>
+                <th>Selenium µg</th>
+            </tr>
+
+
+            <tr>
+                {% for key, val in newdb_min.items() %}
+                <td>{{ val }}</td>
+                {% endfor %}
+            </tr>
+
+
+
+    </table>
+    </div>
+
+
+    <div class="table-responsive">
+        <table class="table table-striped table-warning caption-top" style="width: 100%">
+            <caption class="text-secondary bg-light">Vitamins in the food you ateад (table part 1)</caption>
+            <tr>
+                <th>Vit_C mg</th>
+                <th>Thiamin mg</th>
+                <th>Riboflavin mg</th>
+                <th>Niacin mg</th>
+                <th>Panto_Acid mg</th>
+                <th>Vit_B6 mg</th>
+                <th>Folate_Tot µg</th>
+                <th>Folic_Acid µg</th>
+                <th>Food_Folate µg</th>
+                <th>Folate_DFE µg</th>
+                <th>Choline Tot mg</th>
+            </tr>
+
+
+            <tr>
+                {% for key, val in newdb_vit1.items() %}
+                <td>{{ val }}</td>
+                {% endfor %}
+            </tr>
+
+        </table>
+        </div>
+
+
+        <div class="table-responsive">
+        <table class="table table-striped table-warning caption-top" style="width: 100%">
+            <caption class="text-secondary bg-light">Vitamins in the food you ate (table part 2)</caption>
+            <tr>
+                <th>Vit_B12 µg</th>
+                <th>Vit_A IU</th>
+                <th>Vit_A RAE</th>
+                <th>Retinol µg</th>
+                <th>Alpha_Carot µg</th>
+                <th>Beta_Carot µg</th>
+                <th>Beta_Crypt µg</th>
+                <th>Lycopene µg</th>
+                <th>Lut_Zea µg</th>
+                <th>Vit_E mg</th>
+                <th>Vit_D µg</th>
+            </tr>
+
+            <tr>
+                {% for key, val in newdb_vit2.items() %}
+                <td>{{ val }}</td>
+                {% endfor %}
+            </tr>
+
+        </table>
+        </div>
+
+        <div class="table-responsive">
+        <table class="table table-striped table-warning caption-top" style="width: 100%">
+            <caption class="text-secondary bg-light">Vitamins in the food you ate (table part 3)</caption>
+            <tr>
+                <th>Vit_D IU</th>
+                <th>Vit_K µg</th>
+                <th>FA_Sat g</th>
+                <th>FA_Mono g</th>
+                <th>FA_Poly g</th>
+                <th>Cholestrl mg</th>
+
+            </tr>
+
+            <tr>
+                {% for key, val in newdb_vit3.items() %}
+                <td>{{ val }}</td>
+                {% endfor %}
+            </tr>
+
+        </table>
+        </div>
+
+{% endblock %}

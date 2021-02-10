@@ -1,0 +1,169 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    product_single = {{ product_single }}<br>
+    <!--food_plc = {{ food_plc}}<br>-->
+    <table class="table table-striped">
+
+            <tr>
+                <th>Water,g</th>
+                <th>Energy,g</th>
+                <th>Protein,g</th>
+                <th>Lipid total,g</th>
+                <th>Carbohydrates,g</th>
+                <th>Fiber,g</th>
+                <th>Sugar total,g</th>
+            </tr>
+            {% for row in food_plc %}
+
+            <tr>
+                <td>{{ row["Water_g"] }}</td>
+                <td>{{ row.Energ_Kcal }}</td>
+                <td>{{ row.Protein_g }}</td>
+                <td>{{ row.Lipid_Tot_g}}</td>
+                <td>{{ row.Carbohydrt_g }}</td>
+                <td>{{ row.Fiber_TD_g}}</td>
+                <td>{{ row.Sugar_Tot_g }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+<br>
+    <table class="table table-striped">
+
+            <tr>
+                <th>Ash,g</th>
+                <th>Calcium,mg</th>
+                <th>Iron,mg</th>
+                <th>Magnesium,mg</th>
+                <th>Phosphorus,mg</th>
+                <th>Potassium,mg</th>
+                <th>Sodium,mg</th>
+                <th>Zinc,mg</th>
+                <th>Copper,mg</th>
+                <th>Manganese,mg</th>
+                <th>Selenium,µg</th>
+            </tr>
+            {% for row in food_min %}
+
+            <tr>
+                <td>{{ row["Ash_g"] }}</td>
+                <td>{{ row.Calcium_mg }}</td>
+                <td>{{ row.Iron_mg }}</td>
+                <td>{{ row.Magnesium_mg}}</td>
+                <td>{{ row.Phosphorus_mg }}</td>
+                <td>{{ row.Potassium_mg}}</td>
+                <td>{{ row.Sodium_mg }}</td>
+                <td>{{ row.Zinc_mg}}</td>
+                <td>{{ row.Copper_mg }}</td>
+                <td>{{ row.Manganese_mg }}</td>
+                <td>{{ row.Selenium_µg }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+
+        <table class="table table-striped">
+
+            <tr>
+                <th>Vit_C,mg</th>
+                <th>Thiamin,mg</th>
+                <th>Riboflavin,mg</th>
+                <th>Niacin,mg</th>
+                <th>Panto_Acid,mg</th>
+                <th>Vit_B6,mg</th>
+                <th>Folate_Tot,µg</th>
+                <th>Folic_Acid,µg</th>
+                <th>Food_Folate,µg</th>
+                <th>Folate_DFE,µg</th>
+                <th>Choline_Tot,mg</th>
+            </tr>
+            {% for row in food_vit1 %}
+
+            <tr>
+                <td>{{ row["Vit_C_mg"] }}</td>
+                <td>{{ row.Thiamin_mg }}</td>
+                <td>{{ row.Riboflavin_mg }}</td>
+                <td>{{ row.Niacin_mg}}</td>
+                <td>{{ row.Panto_Acid_mg }}</td>
+                <td>{{ row.Vit_B6_mg}}</td>
+                <td>{{ row.Folate_Tot_µg }}</td>
+                <td>{{ row.Folic_Acid_µg }}</td>
+                <td>{{ row.Food_Folate_µg }}</td>
+                <td>{{ row.Folate_DFE_µg }}</td>
+                <td>{{ row.Choline_Tot_mg }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+        <table class="table table-striped">
+
+            <tr>
+                <th>Vit_B12,µg</th>
+                <th>Vit_A,IU</th>
+                <th>Vit_A,RAE</th>
+                <th>Retinol,µg</th>
+                <th>Alpha_Carot,µg</th>
+                <th>Beta_Carot,µg</th>
+                <th>Beta_Crypt,µg</th>
+                <th>Lycopene_µg</th>
+                <th>Lut_Zea,µg</th>
+                <th>Vit_E,mg</th>
+                <th>Vit_D,µg</th>
+            </tr>
+            {% for row in food_vit2 %}
+
+            <tr>
+                <td>{{ row["Vit_B12_µg"] }}</td>
+                <td>{{ row.Vit_A_IU }}</td>
+                <td>{{ row.Vit_A_RAE }}</td>
+                <td>{{ row.Retinol_µg }}</td>
+                <td>{{ row.Alpha_Carot_µg }}</td>
+                <td>{{ row.Beta_Carot_µg }}</td>
+                <td>{{ row.Beta_Crypt_µg }}</td>
+                <td>{{ row.Lycopene_µg }}</td>
+                <td>{{ row.Lut_Zea_µg }}</td>
+                <td>{{ row.Vit_E_mg }}</td>
+                <td>{{ row.Vit_D_µg }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+
+        <table class="table table-striped">
+
+            <tr>
+                <th>Vit_D,IU</th>
+                <th>Vit_K,µg</th>
+                <th>FA_Sat,g</th>
+                <th>FA_Mono,g</th>
+                <th>FA_Poly,g</th>
+                <th>Cholestrl,mg</th>
+
+            </tr>
+            {% for row in food_vit3 %}
+
+            <tr>
+                <td>{{ row["Vit_D_IU"] }}</td>
+                <td>{{ row.Vit_K_µg }}</td>
+                <td>{{ row.FA_Sat_g }}</td>
+                <td>{{ row.FA_Mono_g }}</td>
+                <td>{{ row.FA_Poly_g }}</td>
+                <td>{{ row.Cholestrl_mg }}</td>
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+
+{% endblock %}

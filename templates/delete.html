@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Food Delete
+{% endblock %}
+
+
+{% block main %}
+
+    <p>Select a product you want to <span class="bg-warning text-wrap">delete</span> from the dropdown list below:</p>
+    <form action="\delete" method="post">
+        <select autofocus name="check">
+            <option disabled selected>Select food product</option>
+                {% for fo in products %}
+                    <option >{{ fo.product }}</option>
+                {%endfor%}
+        </select>
+        <br><br>
+        <p>Enter the quantity of food in grams:</p>
+        <p><input name="quantity" type="number" min="1" max="1000"></p>
+        <button type="submit" class="btn btn-warning">Delete food from food diary</button>
+
+    </form>
+
+{% endblock %}
