@@ -4,12 +4,9 @@
 
 *The climax of this course is its final project. I chose to create a web-based food caculator.*
 
-#### [Video Demo](https://youtu.be/Y2jzpcygD6Y)
+#### [Nutritions CS50 final project Demo Video](https://youtu.be/Y2jzpcygD6Y)
 
-<a href="https://www.youtube.com/embed/Y2jzpcygD6Y" target="_blank"><img src="http://img.youtube.com/vi/ID_ВИДЕОРОЛИКА_НА_YOUTUBE/0.jpg" 
-alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" width="240" height="180" border="10" /></a>
-
-<iframe width="1348" height="767" src="https://www.youtube.com/embed/Y2jzpcygD6Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Nutritions CS50 final project](https://github.com/NataTimos/Nutritions/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-02-10%20%D0%B2%2015.20.51.png)](http://www.youtube.com/watch?v=Y2jzpcygD6Y)
 
 ### Description
   >Nutritions is a web app I created that shaws all nutritions (46 items in total) from food products someone's ate.
