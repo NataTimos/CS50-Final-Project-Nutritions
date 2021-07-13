@@ -3,6 +3,7 @@
 ## Final Project from Harvard's Introduction to Computer Science CS50 hosted on eDX
 
 *The climax of this course is its final project. I chose to create a web-based food caculator.*
+My verifide ceftificate: https://courses.edx.org/certificates/33c624beada54049b8ae8d50d03ea2f3
 
 #### [Nutritions CS50 final project Demo Video](https://youtu.be/Y2jzpcygD6Y)
 
